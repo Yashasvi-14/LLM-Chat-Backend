@@ -1,0 +1,17 @@
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+GEMINI_MODEL = "gemini-flash-latest"
+
+CONVERSATION_FILE = "conversation.json"
+
+LOG_FILE = "chatbot.log"
+
+MAX_RETRIES = 3
+
+REQUEST_TIMEOUT = 30
